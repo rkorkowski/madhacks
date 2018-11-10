@@ -11,5 +11,11 @@
     "url": "git+https://github.com/TMisch/madhacks.git"
   },
   "author": " Rachel Korkowski, Taylor Misch, Thomas Debroux",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.11",
+    "morgan": "^1.9.1"
+  }
 }
