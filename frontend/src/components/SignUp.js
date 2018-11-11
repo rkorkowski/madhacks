@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+
 import "./SignUp.css";
+
 const axios = require("axios");
 
 class SignUp extends Component {
@@ -77,5 +79,4 @@ class SignUp extends Component {
     );
   }
 }
-
 export default SignUp;

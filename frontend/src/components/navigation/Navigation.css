@@ -4,7 +4,10 @@
     left: 0px;
     width: 100%;
     background-color: green;
-    height: 56px;
+    height: 70px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
 }
 
 .navbar_navigation {
@@ -29,6 +32,11 @@
 
 .navbar_logo {
     margin-left: 1rem;
+}
+
+.navbar_logo a:hover {
+    font-size: 1.7em;
+    color: white;
 }
 
 .navbar_items li {

@@ -1,9 +1,11 @@
 import React from "react";
 
+import './Home.css';
+
 const Home = () => {
     return (
-        <div>
-            <p>Home</p>
+        <div className="home">
+            <h1>Welcome to our subscription tracker!</h1>
         </div>
     );
 };

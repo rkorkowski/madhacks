@@ -1,0 +1,34 @@
+<thead>
+  <tr>
+    <th width="200">Subscription</th>
+    <th>Cost / Month</th>
+    <th width="150">Last Time Used</th>
+  </tr>
+</thead>
+<tbody className = "sub-table-Body">
+  <tr>
+    <td>Spotify Premium</td>
+    <td>$5.99</td>
+    <td>August 3rd 2018 (99 days ago)</td>
+    <td><img src={infologo} className="more-info-logo" height="20" width="20" alt="info-logo" /></td>
+  </tr>
+  <tr>
+    <td>Youtube Premium</td>
+    <td>$8.99</td>
+    <td>November 9th 2018 (1 day ago)</td>
+    <td><img src={infologo} className="more-info-logo" height="20" width="20" alt="info-logo" /></td>
+  </tr>
+  <tr>
+    <td>Amazon Prime</td>
+    <td>$9.99</td>
+    <td>October 31st 2018 (10 days ago)</td>
+    <td><img src={infologo} className="more-info-logo" height="20" width="20" alt="info-logo" /></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="subscriptionname"/></td>
+    <td><input type="text" id="costpermonth"/></td>
+    <td><input type="text" id="dateused"/></td>
+    <td><input type="button" class="button success" id="editdone"/></td>
+  </tr>
+</tbody>
+</table>

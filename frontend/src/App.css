@@ -3,7 +3,7 @@
 }
 
 .main {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .App-logo {
@@ -11,8 +11,22 @@
   height: 40vmin;
 }
 
-.more-info-logo {
+.delete-icon {
+  filter: grayscale(100%);
   opacity: 0.5;
+}
+.delete-icon:hover {
+  filter: none;
+  opacity: 1;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .App-header {
