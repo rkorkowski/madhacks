@@ -6,6 +6,7 @@ import Subscriptions from "./components/Subscriptions";
 import Error from "./components/Error";
 import Navigation from "./components/Navigation";
 import Login from "./components/Login";
+import SignUp from "./components/SignUp";
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
             <Route path="/" component={Home} exact />
             <Route path="/subscriptions" component={Subscriptions} />
             <Route path="/login" component={Login} />
+            <Route path="/sign-up" component={SignUp} />
             <Route component={Error} />
           </Switch>
         </div>
