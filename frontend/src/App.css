@@ -11,6 +11,10 @@
   height: 40vmin;
 }
 
+.more-info-logo {
+  opacity: 0.5;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
