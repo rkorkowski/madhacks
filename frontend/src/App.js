@@ -39,12 +39,11 @@ class App extends Component {
         <div style={{height: '100%'}}>
           <Navigation drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={this.state.sideDrawerOpen} />
-          {backdrop}
-          <SubscriptionTable />
+            {backdrop}
             <div className="main">
             <Switch>
               <Route path="/" component={Home} exact />
-              <Route path="/subscriptions" component={Subscriptions} />
+              <Route path="/subscriptions" component={SubscriptionTable} />
               <Route path="/login" component={Login} />
               <Route component={Error} />
             </Switch>
