@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './DrawerToggleButton';
+import '../drawerToggleButton/DrawerToggleButton';
 import './Navigation.css';
-import DrawerToggleButton from './DrawerToggleButton';
+import DrawerToggleButton from '../drawerToggleButton/DrawerToggleButton';
 
 const Navigation = props => {
     return (

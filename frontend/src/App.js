@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from './components/Home';
 import Subscriptions from './components/Subscriptions';
 import Error from './components/Error';
-import Navigation from './components/Navigation';
-import SideDrawer from './components/SideDrawer';
+import Navigation from './components/navigation/Navigation';
+import SideDrawer from './components/sideDrawer/SideDrawer';
 import Backdrop from './components/backdrop/Backdrop';
 
 class App extends Component {
