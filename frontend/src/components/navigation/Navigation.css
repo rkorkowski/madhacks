@@ -5,6 +5,9 @@
     width: 100%;
     background-color: green;
     height: 56px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
 }
 
 .navbar_navigation {

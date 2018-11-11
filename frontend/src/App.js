@@ -40,11 +40,10 @@ class App extends Component {
           <Navigation drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
-          <SubscriptionTable />
             <div className="main">
             <Switch>
               <Route path="/" component={Home} exact />
-              <Route path="/subscriptions" component={Subscriptions} />
+              <Route path="/subscriptions" component={SubscriptionTable} />
               <Route path="/login" component={Login} />
               <Route component={Error} />
             </Switch>
