@@ -11,7 +11,12 @@ const Navigation = props => {
             <div className="navbar_button">
                 <DrawerToggleButton click={props.drawerClickHandler}/>
             </div>
-            <div className="navbar_logo"><a href="/">LogoLinkToHome</a></div>
+            <div className="navbar_logo">
+                <a href="/">
+                    <img src={require("../../images/subLogo.png")} width='60px' height='60'></img>
+                    &nbsp; Subscription Tracker
+                </a>
+            </div>
             <div className="spacer" />
             <div className="navbar_items">
                 <ul>
