@@ -18,10 +18,14 @@ class SubscriptionTable extends Component {
                     <th width="200">Subscription</th>
                     <th>Cost / Month</th>
                     <th width="150">Last Time Used</th>
+                    <th width="50">Delete</th>
                   </tr>
                 </thead>
                 <tbody className = "sub-table-Body">
-                  <TableEntry name = "Spotify" cost = "$6.99" date = "August 3rd 2018"/>
+                  <TableEntry name = "Spotify" cost = "$8.99" date = "August 3rd 2018" id = "1"/>
+                  <TableEntry name = "Hulu" cost = "$16.99" date = "October 1st 2018" id = "2"/>
+                  <TableEntry name = "Netflix" cost = "$3.99" date = "November 3rd 2018"  id = "3"/>
+                  <TableEntry name = "Amazon" cost = "$1.99" date = "December 22nd 2017"  id = "4"/>
                 </tbody>
               </table>
         </div>
