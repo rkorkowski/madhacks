@@ -4,14 +4,14 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from './components/Home';
 import Subscriptions from './components/Subscriptions';
 import Error from './components/Error';
-import Navigation from './components/Navigation';
-
+import SubscriptionTable from './components/SubscriptionTable';
+import './App.css';
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
         <div>
-          <Navigation />
+          <SubscriptionTable />
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/subscriptions" component={Subscriptions} />

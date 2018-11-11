@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-
+import Foundation from 'react-foundation';
 const Navigation = () => {
     return (
         <div>
-            <Link to="/">Home</Link> &nbsp;
-            <Link to="/subscriptions">Subscriptions</Link>
+
         </div>
     );
 };

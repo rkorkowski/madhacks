@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "ajv": "^6.5.5",
+    "foundation-sites": "^6.5.0",
+    "node-sass": "^4.10.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-foundation": "^0.9.6",
