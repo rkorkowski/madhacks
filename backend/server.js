@@ -7,6 +7,9 @@ const Users = require("./models/users");
 const API_PORT = 3001;
 const app = express();
 const router = express.Router();
+
+var userRoutes = require("./routes/users.route");
+
 // import environment variables from .env file
 require("dotenv").config();
 
@@ -31,6 +34,8 @@ db.once("open", () => console.log("connected to the database"));
 
 // checks if connection with the database is successful
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
+
+userRoutes(app);
 
 // (optional) only made for logging and
 // bodyParser, parses the request body to be a readable json format
