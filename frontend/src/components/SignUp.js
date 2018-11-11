@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./SignUp.css";
 const axios = require("axios");
 
 class SignUp extends Component {
@@ -23,31 +24,58 @@ class SignUp extends Component {
     );
   }
 
-  handlesubmit = () => {
-    axios.post("/users/addUser", {
-      firstName: this.state.firstName,
-      lastName: this.state.lastName,
-      usearname: this.state.username,
-      password: this.state.password
+  handleChange = event => {
+    this.setState({
+      [event.target.id]: event.target.value
     });
+    console.log(this.state);
+  };
+
+  handleSubmit = event => {
+    if (
+      this.state.username === "admin" &&
+      this.state.password === "password" &&
+      this.state.firstName === "Hayden" &&
+      this.state.lastName === "Pilsner"
+    ) {
+      const path = "/";
+    }
+    // axios.post("/users/addUser", {
+    //   firstName: this.state.firstName,
+    //   lastName: this.state.lastName,
+    //   usearname: this.state.username,
+    //   password: this.state.password
+    // });
   };
 
   render() {
     return (
       <div>
-        First Name: <input type="text" name="first" />
+        First Name:{" "}
+        <input type="text" name="firstName" onChange={this.handleChange} />
         <br />
-        Last Name: <input type="text" name="last" />
+        Last Name:{" "}
+        <input type="text" name="lastName" onChange={this.handleChange} />
         <br />
-        Username: <input type="text" name="username" />
+        Username:{" "}
+        <input type="text" name="username" onChange={this.handleChange} />
         <br />
-        Password: <input type="text" name="password" />
+        Password:{" "}
+        <input type="text" name="password" onChange={this.handleChange} />
         <br />
-        Confirm Password: <input type="text" name="confirm_password" />
+        Confirm Password:{" "}
+        <input
+          type="text"
+          name="confirm_password"
+          onChange={this.handleChange}
+        />
         <br />
-        <input type="submit" value="Sign Up" />
+        <a href="/" className="button">
+          Sign Up
+        </a>
       </div>
     );
   }
 }
+
 export default SignUp;

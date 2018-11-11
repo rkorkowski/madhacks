@@ -3,6 +3,10 @@ var User = require("../models/users.model");
 
 mongoose.model("User");
 
+exports.listUsers = (req, res) => {
+  console.log("Hello from the get request");
+};
+
 exports.addUser = (req, res) => {
   if (
     !req.body.firstName ||
@@ -19,7 +23,7 @@ exports.addUser = (req, res) => {
     });
     return;
   } else {
-    console.log("BODY: " + req.body.firstName);
+    //console.log("BODY: " + req.body.firstName);
     var newUser = new User({
       firstName: req.body.firstName,
       lastName: req.body.lastName,
